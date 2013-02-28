@@ -1,0 +1,15 @@
+/* TEAM */
+	All: Gabe Hammersmith
+	Contact: me@gabes.in
+	From: Grand Rapids, MI, USA
+
+/* THANKS */
+	Icons: Yoshi 
+	Source: http://ix.sakura.ne.jp/~yoshi/ 
+		
+/* SITE */
+	Last update: {{ lastmod.date|date("m/d/Y") }}
+	Language: English
+	Standards: HTML5, CSS3
+	Components: Slim, Twig, Idiorm, Twitter Bootstrap  
+	Software: Vim, Sublime Text, FileZilla

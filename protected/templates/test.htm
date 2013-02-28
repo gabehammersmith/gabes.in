@@ -1,0 +1,22 @@
+<html>
+<p>{{ resourceUri }} was Last modified {{ lastmod.date|date("Y/m/d") }}
+
+{% for select in collection %}
+<p>{{ select.system }} - {{ select.date }}</p>
+{% endfor %}
+
+{% for id in latest %}
+<p>{{ id.title }} {{ id.date }}</p>
+{% endfor %}
+
+</html>
+
+
+<table>
+{% for id in latest %}
+        <tr class="{{ cycle(['even','odd'],loop.index) }}">
+                <td class="title">{{ id.title }} {{ id.subsystem }}</td>
+                <td class="region">{{ id.system }}</td>
+        </tr>   
+{% endfor %}
+</table>

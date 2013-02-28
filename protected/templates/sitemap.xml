@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://gabes.in/thearcade</loc>
+
+      <lastmod>{{ lastmod.date|date("Y-m-d") }}</lastmod>
+
+      <changefreq>monthly</changefreq>
+     
+      <priority>0.8</priority>
+      
+   </url>
+
+{% for select in collection %}
+   <url>
+
+      <loc>http://gabes.in/thearcade/{{ select.system }}</loc>
+
+      <changefreq>monthly</changefreq>
+
+      <lastmod>2013-2-27</lastmod>
+
+      <priority>0.6</priority>
+
+   </url>
+
+{% endfor %}
+   <url>
+
+      <loc>http://gabes.in/thearcade/about</loc>
+
+      <changefreq>yearly</changefreq>
+
+      <lastmod>2013-2-27</lastmod>
+
+      <priority>0.4</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://gabes.in/thearcade/humans.txt</loc>
+
+      <changefreq>yearly</changefreq>
+
+      <lastmod>2013-2-27</lastmod>
+
+      <priority>0.2</priority>
+
+   </url>
+
+</urlset>

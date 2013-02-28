@@ -1,0 +1,32 @@
+{% include 'header.htm' %}
+<div id="content" class="main">
+
+    <div>
+        <form class="select">
+        <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
+	        <option value="" selected="selected">Select...</option>
+                {% for select in collection %}
+		<option value="/thearcade/{{ select.system }}" class="cap">{{ select.system }}</option>
+        	{% endfor %}
+	</select>
+        <noscript><input type="submit" value="OK!"></noscript>
+        </form>
+        <h3><a data-toggle="modal" href="#recent">Last update</a>: {{ lastmod.date|date("m/d/y") }}</h3>
+    </div>
+
+    <div id="recent" class="modal hide fade in left" style="display: none; ">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h2>Recent Additions</h2>
+        </div>
+        <div class="modal-body">
+		{% for id in latest %}
+		<p>{{ id.title }} ({{ id.region }}) - <a href="/thearcade/{{ id.system }}"><priority><span class="cap">{{ id.system }}</span></a></span></p>
+		{% endfor %}
+        </div>
+        <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+        </div>
+    </div>
+</div>
+{% include 'footer.htm' %}

@@ -1,0 +1,23 @@
+{% include 'header.htm' %}
+<div id="content">
+<h2><img src="../img/{{ system }}.gif" alt="{{ system }}" id="icon" /> {{ system }}</h2>
+
+<table class="meat">
+{% for title in collection %}
+{% if title.model is defined %}
+          <tr class="{{ cycle(['even','odd'],loop.index) }}">
+                <td class="title">{{ title.title }} {{ title.subsystem }}</td>
+                <td class="model">{{ title.model }}</td>
+                <td class="region">{{ title.region }}</td>	
+	  </tr>
+{% else %}
+        <tr class="{{ cycle(['even','odd'],loop.index) }}">
+                <td class="title">{{ title.title }} {{ title.subsystem }}</td>
+                <td class="region">{{ title.region }}</td>
+        </tr>
+{% endif %}
+{% endfor %}
+</table>
+<noscript><img src="http://pwk.gabes.in/piwik.php?idsite=1" alt="" /></noscript>
+</div>
+{% include 'footer.htm' %}
