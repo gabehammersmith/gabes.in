@@ -11,15 +11,15 @@
 	<meta property="og:site_name" content="gabes.in/thearcade" />
 	<meta property="og:type" content="website" />
 	{% if system == 'about' %}
-		<meta property="og:image" content="http://gabes.in/img/{{ system }}.gif" />
+		<meta property="og:image" content="http://gabes.in/img/{{ system }}_fb.gif" />
 		<meta property="og:description" content="How I built an overly complex solution to the simple problem of cataloging my game collection." />
 		<meta name="description" content="How I built an overly complex solution to the simple problem of cataloging my game collection." />
 	{% elseif home is not defined %}
-		<meta property="og:image" content="http://gabes.in/img/{{ system }}.gif" />
+		<meta property="og:image" content="http://gabes.in/img/{{ system }}_fb.gif" />
 		<meta property="og:description" content="A nice and tidy inventory of my {{ system }} collection." />
 		<meta name="description" content="A nice and tidy inventory of my {{ system }} collection." />
 	{% else %}
-		<meta property="og:image" content="http://gabes.in/img/arcade.gif" />
+		<meta property="og:image" content="http://gabes.in/img/arcade_fb.gif" />
 		<meta property="og:description" content="An overly complex solution to the simple problem of cataloging my game collection." />
 		<meta name="description" content="An overly complex solution to the simple problem of cataloging my game collection." />
 	{% endif %}
