@@ -7,3 +7,8 @@ Made possible by:
 + [Idiorm](https://github.com/j4mie/idiorm)
 + [Bootstrap](http://twitter.github.com/bootstrap)
 + [Piwik](https://github.com/piwik/piwik)
+
+## ToDo
++ Create admin interface for adding/removing games
++ Automate lastmod dates for system pages in sitemaps.xml
++ Clean up code and make better use of Twig
