@@ -21,7 +21,7 @@
         </div>
         <div class="modal-body">
 		{% for id in latest %}
-		<p>{{ id.title }} ({{ id.region }}) - <a href="/thearcade/{{ id.system }}"><priority><span class="cap">{{ id.system }}</span></a></span></p>
+		<p>{{ id.title }} {{ id.subsystem }} ({{ id.region }}) - <a href="/thearcade/{{ id.system }}"><span class="cap">{{ id.system }}</span></a></span></p>
 		{% endfor %}
         </div>
         <div class="modal-footer">

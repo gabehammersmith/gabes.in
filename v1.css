@@ -74,11 +74,11 @@ td.region {
    text-align: right;
 }
 
-tr.even {
+tr.odd {
    background: #F0F0F0;
 }
 
-tr.odd {
+tr.even {
 }
 
 form.select {
