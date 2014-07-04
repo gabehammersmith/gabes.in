@@ -4,6 +4,6 @@
         "slim/slim": "2.2.*",
         "slim/extras": "2.0.*",
         "j4mie/idiorm": "*",
-        "twig/twig": "1.12.*"
+        "twig/twig": "1.*"
     }
 }

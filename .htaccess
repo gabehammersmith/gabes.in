@@ -7,3 +7,8 @@ RewriteRule ^(.*)$ http://gabes.in/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
+
+# block visitors referred from semalt.com
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} semalt\.com [NC]
+RewriteRule .* - [F]
