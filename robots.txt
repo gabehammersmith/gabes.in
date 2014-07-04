@@ -3,4 +3,4 @@
 User-agent: *
 Disallow: /bootstrap/
 
-Sitemap: http://gabes.in/sitemap.xml
+Sitemap: http://gabes.in/thearcade/sitemap.xml

@@ -1,11 +1,11 @@
 /* TEAM */
 	All: Gabe Hammersmith
 	Contact: me@gabes.in
-	From: Grand Rapids, MI, USA
+	From: Chicago, IL, USA
 
 /* THANKS */
 	Icons: Yoshi 
-	Source: http://ix.sakura.ne.jp/~yoshi/ 
+	Source: http://yspixel.jpn.org/ 
 		
 /* SITE */
 	Last update: {{ lastmod.date|date("m/d/Y") }}
